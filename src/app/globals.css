@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root { --radius: 14px; }
+html { scroll-behavior: smooth; }
+
+body { @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100; }
+
+/* Utility wrappers used throughout the project */
+.container { @apply max-w-5xl mx-auto px-6; }
+.section { @apply py-20 md:py-28; }
+
+h1, h2, h3 { @apply tracking-tight; }
+
+/* Links */
+a.underline-link { @apply underline decoration-primary-400 underline-offset-4 hover:decoration-primary-500; }
+
+/* Prose styles (requires @tailwindcss/typography) */
+.prose { @apply prose-slate dark:prose-invert max-w-none; }
