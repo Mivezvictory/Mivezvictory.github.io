@@ -1,12 +1,14 @@
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import ThemeToggle from './ThemeToggle'
+import ThemeToggle from './themes/ThemeToggle'
 
 const links = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#contact', label: 'Contact' },
+  
 ]
 
 export default function Navbar() {
