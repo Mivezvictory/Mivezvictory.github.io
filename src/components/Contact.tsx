@@ -7,7 +7,7 @@ export default function Contact() {
         <p className="my-text">Have a role or idea? Let’s talk.</p>
         <div className="mt-4 flex gap-3">
           <a href="mailto:Mivez70@gmail.com" className="contact-link-style">Email me</a>
-          <a href="www.linkedin.com/in/victory-iyakoregha" className="contact-link-style">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/victory-iyakoregha" className="contact-link-style">LinkedIn</a>
         </div>
       </div>
     </Section>
