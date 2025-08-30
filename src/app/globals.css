@@ -92,7 +92,6 @@ a.underline-link { @apply underline decoration-blue-400 underline-offset-4 hover
   margin-top: 0.5rem;           /* mt-2 */
   font-size: 0.875rem;          /* text-sm */
   line-height: 1.25rem;         /* text-sm's default line-height */
-  color: #0f172a;               /* text-slate-600 */
 }
 
 /* Dark mode via system preference */
