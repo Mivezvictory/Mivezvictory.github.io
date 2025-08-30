@@ -12,7 +12,8 @@ export default function About() {
             Currently, I am the cloud developer & architect at Value Partners Investments. 
             I am tasked with turning product requirements into secure, reliable systems. 
             I build .NET/C# backends, automate delivery with Azure DevOps CI/CD, 
-            and stand up the Azure foundation needed for each project. This includes but is not limited to: 
+            and stand up the Azure foundation needed for each project. This includes but is not limited to:
+        </p>
             <ul>
                 <li>Azure Functions</li>
                 <li>App Services</li>
@@ -22,7 +23,6 @@ export default function About() {
                 <li>monitoring with Application Insights and Log Analytics</li>
 
             </ul>  
-        </p>
       </div>
     </Section>
   )

@@ -44,3 +44,88 @@ a.underline-link { @apply underline decoration-blue-400 underline-offset-4 hover
     border-color: #334155;     /* dark:border-slate-700 */
   }
 }
+
+.my-experience-card {
+  border-radius: 1rem;                 /* rounded-2xl */
+  border: 1px solid #e2e8f0;           /* border + border-slate-200 */
+  overflow: hidden;                    /* overflow-hidden */
+  transition-property: box-shadow;     /* transition-shadow */
+  transition-duration: 150ms;          /* Tailwind's default duration */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Tailwind's default easing */
+  height: 35vh;
+
+}
+
+.my-card {
+  border-radius: 1rem;                 /* rounded-2xl */
+  border: 1px solid #e2e8f0;           /* border + border-slate-200 */
+  overflow: hidden;                    /* overflow-hidden */
+  transition-property: box-shadow;     /* transition-shadow */
+  transition-duration: 150ms;          /* Tailwind's default duration */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Tailwind's default easing */
+}
+
+.my-card:hover {
+  /* hover:shadow-lg */
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  .my-card { border-color: #1e293b; }  /* dark:border-slate-800 */
+}
+
+.my-card-image {
+  position: relative;          /* relative */
+  aspect-ratio: 16 / 9;        /* aspect-[16/9] */
+  background-color: #f1f5f9;   /* bg-slate-100 */
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  .my-card-image { background-color: #0f172a; } /* dark:bg-slate-900 */
+}
+
+.my-card-description {
+  margin-top: 0.5rem;           /* mt-2 */
+  font-size: 0.875rem;          /* text-sm */
+  line-height: 1.25rem;         /* text-sm's default line-height */
+  color: #0f172a;               /* text-slate-600 */
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  .my-card-description { color: #cbd5e1; }  /* dark:text-slate-300 */
+}
+
+.my-row {
+  margin-top: 0.75rem;   /* mt-3 */
+  display: flex;         /* flex */
+  flex-wrap: wrap;       /* flex-wrap */
+  gap: 0.5rem;           /* gap-2 */
+  font-size: 0.75rem;    /* text-xs */
+  line-height: 1rem;     /* text-xs default line-height */
+  color: #64748b;        /* text-slate-500 */
+}
+
+.my-pill {
+  border-radius: 9999px;   /* rounded-full */
+  background-color: #f1f5f9; /* bg-slate-100 */
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  .my-pill { background-color: #0f172a; } /* dark:bg-slate-900 */
+}
+
+.my-text {
+  color: #000; /* text-slate-600 */
+}
+
+/* Dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  .my-text { color: #cbd5e1; } /* dark:text-slate-300 */
+}
