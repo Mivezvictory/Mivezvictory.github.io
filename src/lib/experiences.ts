@@ -12,12 +12,9 @@ export const experiences : Experience[] = [
     {
         slug: 'VPI-experience',
         companyName: 'Value Partners Investments',  
-        jobTitle: 'Cloud Developer & Architect ',
-        descriptions:   "Design, develop, maintain and secure software solutions."+  
-                        " Perform automated deployment and real-time monitoring to ensure reliable, high- quality releases " + 
-                        "Troubleshoot and enhance existing applications to improve performance, stability, and maintainability " +
-                        "Design, build, and manage CI/CD pipelines that streamline development workflows and accelerate delivery " +
-                        "Lead Salesforce custom-application and integration development in support of business objectives ",
+        jobTitle: 'Azure Cloud Developer & Architect ',
+        descriptions:   "I build secure, scalable cloud software and own it in production, shipping via automated deployments, real-time monitoring, and continuous hardening. I also modernize existing systems to boost performance, resilience, and maintainability." +
+                        "I lead Salesforce custom apps and integrations tied to measurable business outcomes, and I design CI/CD pipelines that accelerate delivery. I mentor developers, including 10 University of Manitoba co-op students, and was named University of Manitoba Science Co-op Supervisor of the Year (2023).",
         tech: ["Azure", "C#", ".NET", "ASP.NET", "xUnit", "Salesforce"] ,
         startDate: 'May 2021',
         endDate: 'Present'   
