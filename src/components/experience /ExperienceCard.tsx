@@ -5,7 +5,13 @@ export default function ExperienceCard({ exp }: { exp: Experience }) {
   return (
     <div className="my-experience-card">
       <div className="p-5">
-        <h3 className="text-xl font-semibold">{exp.title}</h3>
+        <div className="flex items-start justify-between mb-1">
+          <h3 className="text-xl font-semibold">{exp.companyName}</h3>
+          <span className="text-sm text-slate-500 whitespace-nowrap ml-4">
+            {exp.startDate} – {exp.endDate ?? 'Present'}
+          </span>
+        </div>
+        <h5 className="text-base font-medium text-slate-700 dark:text-slate-200 mb-2">{exp.jobTitle}</h5>
         <p className="my-card-description">{exp.descriptions}</p>
         <ul className="my-row">
           {exp.tech.map((t) => (

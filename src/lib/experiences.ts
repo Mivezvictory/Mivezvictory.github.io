@@ -1,44 +1,56 @@
 export type Experience = {
     slug: string
-    title: string
+    companyName: string
+    jobTitle: string
     descriptions: string
     tech: string[]
+    startDate: string
+    endDate: string 
 }
 
 export const experiences : Experience[] = [
     {
         slug: 'VPI-experience',
-        title: 'Value Partners Investments - Cloud Developer & Architect ',
-        descriptions:   "Design, develop, maintain and secure software solutions."+  
-                        " Perform automated deployment and real-time monitoring to ensure reliable, high- quality releases " + 
-                        "Troubleshoot and enhance existing applications to improve performance, stability, and maintainability " +
-                        "Design, build, and manage CI/CD pipelines that streamline development workflows and accelerate delivery " +
-                        "Lead Salesforce custom-application and integration development in support of business objectives ",
-        tech: ["Azure", "C#", ".NET", "ASP.NET", "xUnit", "Salesforce"]    
+        companyName: 'Value Partners Investments',  
+        jobTitle: 'Azure Cloud Developer & Architect ',
+        descriptions:   "I build secure, scalable cloud software and own it in production, shipping via automated deployments, real-time monitoring, and continuous hardening. I also modernize existing systems to boost performance, resilience, and maintainability." +
+                        "I lead Salesforce custom apps and integrations tied to measurable business outcomes, and I design CI/CD pipelines that accelerate delivery. I mentor developers, including 10 University of Manitoba co-op students, and was named University of Manitoba Science Co-op Supervisor of the Year (2023).",
+        tech: ["Azure", "C#", ".NET", "ASP.NET", "xUnit", "Salesforce"] ,
+        startDate: 'May 2021',
+        endDate: 'Present'   
     },
     {
         slug: 'CEOS-experience',
-        title: 'Center For Earth Observation Science - Junior Database & Web Developer ',
+        companyName: 'Center For Earth Observation Science',
+        jobTitle:  'Junior Database & Web Developer ',
         descriptions:   "Developed Python scripts and desktop apps for data processing and visualization. " + 
                         "Standardized intake with optimized FME workflows and server endpoints and document everything using LaTeX. " +
                         "Partnered with the Canadian Consortium for Arctic Data Interoperability to implement ERDDAP-based interoperability." +
                         "                                                                                                                   " + 
                         "                                                                                                                   ",
-        tech: ["React", "JS", "Python", "MongoDB"]    
+        tech: ["React", "JS", "Python", "MongoDB"],    
+        startDate: 'May 2019',
+        endDate: 'May 2021'
     },
 
      {
         slug: 'Commetix-experience',
-        title: 'Commetix Systems Inc. - Intermediate Software Developer ',
+        companyName: 'Commetix Systems Inc.',  
+        jobTitle:   'Intermediate Software Developer ',
         descriptions:   "Partnered with teammates to design, implement, and validate major features while improving existing codebases. " +
         "Diagnosed and resolved bugs, testing thoroughly, and coordinate with stakeholders and end users on timelines, technical challenges, and infrastructure components.",
-        tech: ["React", "TS"]    
+        tech: ["React", "TS"],
+        startDate: 'October 2020',
+        endDate: 'February 2021'    
     },
 
     {
         slug: 'OTS-experience',
-        title: 'OnTheStep - Developer ',
+        companyName: 'OnTheStep', 
+        jobTitle:   'Developer ',
         descriptions:   "I developed and maintained mobile front ends for iOS and Android, implementing and refining algorithms that power core in-app functionality. I also upgraded XML, Node.js, and JavaScript codebases for performance and scalability, and handled customer support plus partner recruitment and onboarding..",
-        tech: ["Firebase", "JS"]    
+        tech: ["Firebase", "JS"],
+        startDate: 'September 2018',
+        endDate: 'June 2019'    
     },
 ]

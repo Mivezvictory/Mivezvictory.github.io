@@ -12,7 +12,7 @@ export default function Experiences() {
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
         variants={{ hidden: {}, show: {} }}
-        className="grid md:grid-cols-2 gap-6"
+        className="grid md:grid-cols-1 gap-6"
       >
         {experiences.map((exp, i) => (
           <motion.div
