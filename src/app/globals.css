@@ -52,7 +52,8 @@ a.underline-link { @apply underline decoration-blue-400 underline-offset-4 hover
   transition-property: box-shadow;     /* transition-shadow */
   transition-duration: 150ms;          /* Tailwind's default duration */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Tailwind's default easing */
-  height: 35vh;
+  width: 100%;                         /* Make card take full width */
+
 
 }
 
