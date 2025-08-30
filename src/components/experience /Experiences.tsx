@@ -1,12 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Certifications } from '@/lib/certifications'
-import CertificationCard from './CertificationCard'
+import { experiences } from '@/lib/experiences'
+import ExperienceCard from './ExperienceCard'
 import Section from '../Section'
 
-export default function Certification() {
+export default function Experiences() {
   return (
-    <Section id="certifications" title="Certifications">
+    <Section id="experiences" title="Experiences">
       <motion.div
         initial="hidden"
         whileInView="show"
@@ -14,17 +14,17 @@ export default function Certification() {
         variants={{ hidden: {}, show: {} }}
         className="grid md:grid-cols-2 gap-6"
       >
-        {Certifications.map((c, i) => (
+        {experiences.map((exp, i) => (
           <motion.div
-            key={c.slug}
+            key={exp.slug}
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.05, duration: 0.5 }}
           >
-            <CertificationCard c={c} />
+            <ExperienceCard exp={exp} />
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> 
     </Section>
   )
 }

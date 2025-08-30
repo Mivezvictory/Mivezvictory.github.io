@@ -24,7 +24,7 @@ export const projects: Project[] = [
         description:
             "End-to-end notification system: Core abstractions (models, interfaces, factories), concrete Email/SMS services," +
             " a generic manager layer, and an ASP.NET Core Web API with Swagger. Includes xUnit test suites and is CI/CD ready.",
-        tech: ["C#", ".NET 8", "ASP.NET Core Web API", ".NET Standard 2.1 (Core)", "xUnit", "Swagger/OpenAPI"],
+        tech: ["C#", "ASP.NET", "xUnit", "Swagger/OpenAPI"],
         image: "/Notifications.png",
         href: "https://github.com/Mivezvictory/NotificationApplication.git#readme",
         repo: "https://github.com/Mivezvictory/NotificationApplication.git"
