@@ -12,7 +12,7 @@ export default function ExperienceCard({ exp }: { exp: Experience }) {
           </span>
         </div>
         <h5 className="text-base font-medium text-slate-700 dark:text-slate-200 mb-2">{exp.jobTitle}</h5>
-        <p className="my-card-description">{exp.descriptions}</p>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{exp.descriptions}</p>
         <ul className="my-row">
           {exp.tech.map((t) => (
             <li key={t} className="rounded-full bg-slate-100 dark:bg-slate-900 px-2 py-1">{t}</li>

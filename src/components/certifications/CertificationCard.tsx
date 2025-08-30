@@ -9,7 +9,7 @@ export default function CertificationCard({ c }: { c: Certification }) {
       </div>
       <div className="p-5">
         <h3 className="text-xl font-semibold">{c.title}</h3>
-        <p className="my-card-description">{c.description}</p>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{c.description}</p>
        
       </div>
     </div>
