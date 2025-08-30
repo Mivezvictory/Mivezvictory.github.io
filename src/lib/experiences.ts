@@ -48,7 +48,7 @@ export const experiences : Experience[] = [
         slug: 'OTS-experience',
         companyName: 'OnTheStep', 
         jobTitle:   'Developer ',
-        descriptions:   "I developed and maintained mobile front ends for iOS and Android, implementing and refining algorithms that power core in-app functionality. I also upgraded XML, Node.js, and JavaScript codebases for performance and scalability, and handled customer support plus partner recruitment and onboarding..",
+        descriptions:   "I developed and maintained mobile front ends for iOS and Android, implementing and refining algorithms that power core in-app functionality. I also upgraded XML, Node.js, and JavaScript codebases for performance and scalability, and handled customer support plus partner recruitment and onboarding.",
         tech: ["Firebase", "JS"],
         startDate: 'September 2018',
         endDate: 'June 2019'    
