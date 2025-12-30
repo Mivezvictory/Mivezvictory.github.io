@@ -10,13 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        slug: 'Deep-Dive-Recommender',
-        title: 'Deep Dive Recommender',
-        description: 'Vite.js + react webapp, powered by Azure Functions & Spotify APIs to find hiden gems and popular hits from artist/band of your choice',
-        tech: ['Vite.js', 'React', 'TypeScript', 'C#', 'MUI', 'Azure functions', 'Azure static web apps', 'Azure cosmos DB'],
+        slug: 'spotinet-client',
+        title: 'SpotiNet.Client',
+        description: 'An opensoource .NET NuGet package providing a type-safe, easy-to-use client library for interacting with the Spotify Web API. Built with C# and published on NuGet. 900+ total downloads.',
+        tech: ['C#', '.NET', 'NuGet', 'Spotify API'],
         image: '/DeepDiveRecommender.png',
-        href: 'https://icy-island-05b24a40f.1.azurestaticapps.net',
-        repo: 'https://github.com/Mivezvictory/Deep-Dive-Recommender.git'
+        href: 'https://www.nuget.org/packages/SpotiNet.Client/',
+        repo: 'https://github.com/Mivezvictory/SpotiNet.Client'
+    },
+    {
+        slug: 'credit-graph-explorer',
+        title: 'Credit Graph Explorer',
+        description: 'A full-stack application for visualizing and exploring artist credit relationships and networks using graph technology.',
+        tech: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'Graph Database'],
+        image: '/DeepDiveRecommender.png',
+        href: 'https://github.com/Mivezvictory/credit-graph-explorer',
+        repo: 'https://github.com/Mivezvictory/credit-graph-explorer'
     },
     {
         slug: "notification-system",
@@ -29,12 +38,4 @@ export const projects: Project[] = [
         href: "https://github.com/Mivezvictory/NotificationApplication.git#readme",
         repo: "https://github.com/Mivezvictory/NotificationApplication.git"
     },
-  
-//   {
-//     slug: 'spotify-integration',
-//     title: 'Spotify Auth + Explore',
-//     description: 'OAuth flow to explore user playlists; Azure Function backend in C#.   ...TODO change later',
-//     tech: ['React', 'Next.js', 'C#', 'Azure Functions'],
-//     image: '/images/spotify.png',
-//   },
 ]

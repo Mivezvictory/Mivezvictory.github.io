@@ -2,8 +2,13 @@ import Image from 'next/image'
 import type { Project } from '@/lib/projects'
 
 export default function ProjectCard({ p }: { p: Project }) {
+  const primaryLink = p.href || p.repo || '#'
+
   return (
-    <div className="my-card">
+    <div 
+      onClick={() => window.open(primaryLink, '_blank')}
+      className="my-card cursor-pointer hover:opacity-90 transition-opacity"
+    >
       <div className="my-card-image">
         <Image src={p.image} alt={p.title} fill className="object-cover" sizes="(min-width: 768px) 512px, 100vw" />
       </div>
@@ -15,12 +20,12 @@ export default function ProjectCard({ p }: { p: Project }) {
             <li key={t} className="rounded-full bg-slate-100 dark:bg-slate-900 px-2 py-1">{t}</li>
           ))}
         </ul>
-        <div className="mt-4 flex gap-4 text-sm">
+        <div className="mt-4 flex gap-4 text-sm" onClick={(e) => e.stopPropagation()}>
           {p.href && (
-            <a className="underline-link" href={p.href} target="_blank">Live</a>
+            <a className="underline-link" href={p.href} target="_blank" rel="noopener noreferrer">Live</a>
           )}
           {p.repo && (
-            <a className="underline-link" href={p.repo} target="_blank">Code</a>
+            <a className="underline-link" href={p.repo} target="_blank" rel="noopener noreferrer">Code</a>
           )}
         </div>
       </div>
