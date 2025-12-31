@@ -14,7 +14,7 @@ export const projects: Project[] = [
         title: 'SpotiNet.Client',
         description: 'An opensoource .NET NuGet package providing a type-safe, easy-to-use client library for interacting with the Spotify Web API. Built with C# and published on NuGet. 900+ total downloads.',
         tech: ['C#', '.NET', 'NuGet', 'Spotify API'],
-        image: '/DeepDiveRecommender.png',
+        image: '/spoticlient.png',
         href: 'https://www.nuget.org/packages/SpotiNet.Client/',
         repo: 'https://github.com/Mivezvictory/SpotiNet.Client'
     },
@@ -23,7 +23,7 @@ export const projects: Project[] = [
         title: 'Credit Graph Explorer',
         description: 'A full-stack application for visualizing and exploring artist credit relationships and networks using graph technology.',
         tech: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'Graph Database'],
-        image: '/DeepDiveRecommender.png',
+        image: '/credit-graph-explorer.png',
         href: 'https://github.com/Mivezvictory/credit-graph-explorer',
         repo: 'https://github.com/Mivezvictory/credit-graph-explorer'
     },
