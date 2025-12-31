@@ -6,6 +6,8 @@ export type Project = {
   image: string
   href?: string
   repo?: string
+  status?: 'active' | 'in-progress' | 'completed'
+  lastUpdated?: string
 }
 
 export const projects: Project[] = [
@@ -16,7 +18,9 @@ export const projects: Project[] = [
         tech: ['C#', '.NET', 'NuGet', 'Spotify API'],
         image: '/spoticlient.png',
         href: 'https://www.nuget.org/packages/SpotiNet.Client/',
-        repo: 'https://github.com/Mivezvictory/SpotiNet.Client'
+        repo: 'https://github.com/Mivezvictory/SpotiNet.Client',
+        status: 'active',
+        lastUpdated: '2025-11-23'
     },
     {
         slug: 'credit-graph-explorer',
@@ -25,7 +29,9 @@ export const projects: Project[] = [
         tech: ['React', 'TypeScript', 'Node.js', 'GraphQL', 'Graph Database'],
         image: '/credit-graph-explorer.png',
         href: 'https://github.com/Mivezvictory/credit-graph-explorer',
-        repo: 'https://github.com/Mivezvictory/credit-graph-explorer'
+        repo: 'https://github.com/Mivezvictory/credit-graph-explorer',
+        status: 'in-progress',
+        lastUpdated: '2025-12-30'
     },
     {
         slug: "notification-system",
@@ -36,6 +42,8 @@ export const projects: Project[] = [
         tech: ["C#", "ASP.NET", "xUnit", "Swagger/OpenAPI"],
         image: "/Notifications.png",
         href: "https://github.com/Mivezvictory/NotificationApplication.git#readme",
-        repo: "https://github.com/Mivezvictory/NotificationApplication.git"
+        repo: "https://github.com/Mivezvictory/NotificationApplication.git",
+        status: 'in-progress',
+        lastUpdated: '2025-08-05'
     },
 ]
